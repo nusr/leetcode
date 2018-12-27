@@ -1,5 +1,6 @@
 const fs = require("fs");
 const log = info => console.log(info);
+let solutionList = readJsonFile("./solution.json");
 function generateDirectory(dirPath) {
   try {
     if (dirPath && !fs.existsSync(dirPath)) {
@@ -19,9 +20,9 @@ function readJsonFile(filePath) {
   }
 }
 
-let solutionList = readJsonFile("./solution.json");
-function githubPath(type, item) {
-  return `${type.toLowerCase()}/${item.questionFrontendId}.${item.title
+function githubPath(item) {
+  let type = item.topicTags[0].name.toLowerCase();
+  return `${type}/${item.questionFrontendId}.${item.title
     .split(" ")
     .join("_")}.md`;
 }
@@ -31,16 +32,15 @@ function generateFile(list) {
       topicTag: { questions, name }
     }
   } = list;
-  let acceptList = [];
   let parentDir = name;
 
   generateDirectory(parentDir);
   for (let item of questions) {
     if (item.status === "ac") {
-      let filePath = githubPath(parentDir, item);
+      let filePath = githubPath(item);
       let check = fs.existsSync(filePath);
       if (check) {
-        log(filePath);
+        // log(filePath);
       } else {
         fs.writeFileSync(
           filePath,
@@ -58,8 +58,7 @@ function generateFile(list) {
     }
   }
 }
-generateFile(readJsonFile("./source/array.json"));
-fs.writeFileSync("./solution.json", JSON.stringify(solutionList));
+
 function updateReadMe() {
   let content = `# leetcode
 
@@ -70,19 +69,36 @@ function updateReadMe() {
   for (let item of Object.values(solutionList)) {
     let ac = JSON.parse(item.stats).acRate;
     let type = item.topicTags[0].name;
-    let filePath = githubPath(type, item);
+    let filePath = githubPath(item);
+    let mdContent = fs.readFileSync(filePath, "utf-8");
+    let solution = "";
+    if (mdContent && mdContent.includes("- `C`")) {
+      solution = "C";
+    }
+    if (mdContent && mdContent.includes("- `js`")) {
+      if (solution) {
+        solution += ",javaScript";
+      } else {
+        solution = "javaScript";
+      }
+    }
     content += `\n|${item.questionFrontendId}|[${
       item.title
     }](https://leetcode.com/problems/${
       item.titleSlug
-    }/)|[js](${filePath})|${ac}|${item.difficulty}|${type}|${item.companyTags ||
-      "无"}|`;
+    }/)|[${solution}](${filePath})|${ac}|${
+      item.difficulty
+    }|${type}|${item.companyTags || "无"}|`;
   }
   fs.writeFileSync("./README.md", content);
 }
-updateReadMe();
+
 function readDirectory(dir) {
   fs.readdir(dir, (error, files) => {
     log(files);
   });
 }
+
+generateFile(readJsonFile("./source/array.json"));
+updateReadMe();
+fs.writeFileSync("./solution.json", JSON.stringify(solutionList));
