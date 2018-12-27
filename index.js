@@ -21,7 +21,7 @@ function readJsonFile(filePath) {
 
 let solutionList = readJsonFile("./solution.json");
 function githubPath(type, item) {
-  return `${type}/${item.questionFrontendId}.${item.title
+  return `${type.toLowerCase()}/${item.questionFrontendId}.${item.title
     .split(" ")
     .join("_")}.md`;
 }
@@ -32,7 +32,7 @@ function generateFile(list) {
     }
   } = list;
   let acceptList = [];
-  let parentDir = name.toLowerCase();
+  let parentDir = name;
 
   generateDirectory(parentDir);
   for (let item of questions) {
@@ -76,7 +76,7 @@ function updateReadMe() {
     }](https://leetcode.com/problems/${
       item.titleSlug
     }/)|[js](${filePath})|${ac}|${item.difficulty}|${type}|${item.companyTags ||
-      ""}|`;
+      "无"}|`;
   }
   fs.writeFileSync("./README.md", content);
 }
