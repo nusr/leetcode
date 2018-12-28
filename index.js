@@ -1,6 +1,6 @@
 const fs = require("fs");
 const log = info => console.log(info);
-let solutionList = readJsonFile("./solution.json");
+let solutionList = readJsonFile("./solutionList.json");
 function generateDirectory(dirPath) {
   try {
     if (dirPath && !fs.existsSync(dirPath)) {
@@ -21,32 +21,26 @@ function readJsonFile(filePath) {
 }
 
 function githubPath(item) {
-  let type = item.topicTags[0].name.toLowerCase();
-  return `${type}/${item.questionFrontendId}.${item.title
-    .split(" ")
-    .join("_")}.md`;
+  let { stat } = item;
+  return `solution/${stat.frontend_question_id}.${
+    stat.question__title_slug
+  }.md`;
 }
 function generateFile(list) {
-  let {
-    data: {
-      topicTag: { questions, name }
-    }
-  } = list;
-  let parentDir = name;
-
-  generateDirectory(parentDir);
-  for (let item of questions) {
+  let { stat_status_pairs } = list;
+  for (let item of stat_status_pairs) {
     if (item.status === "ac") {
       let filePath = githubPath(item);
       let check = fs.existsSync(filePath);
+      let {
+        stat: { frontend_question_id, question__title_slug, question__title }
+      } = item;
       if (check) {
         // log(filePath);
       } else {
         fs.writeFileSync(
           filePath,
-          `# [${item.questionFrontendId}.${
-            item.title
-          }](https://leetcode.com/problems/${item.titleSlug}/)
+          `# [${frontend_question_id}.${question__title}](https://leetcode.com/problems/${question__title_slug}/)
           \n## 问题  
           \n## 思路
           \n时间复杂度为 \`O(n)\`\n空间复杂度为 \`O(1)\`
@@ -54,21 +48,30 @@ function generateFile(list) {
           \n- \`js\``
         );
       }
-      solutionList[item.questionFrontendId] = item;
+      solutionList[frontend_question_id] = item;
     }
   }
 }
-
+function getDifficulty(difficulty) {
+  switch (difficulty) {
+    case 2:
+      return "Medium";
+    case 3:
+      return "Hard";
+    default:
+      return "Easy";
+  }
+}
 function updateReadMe() {
   let content = `# leetcode
 
   记录 \`javaScript\`,\`C\` 刷 leetcode 
   
-  | #   | title  | solution | Acceptance | Difficulty | Topics | Companies |
-  | --- | ---- | -------- | ----- | ---- | ---- | ---- |`;
+  | #   | title  | solution | Acceptance | Difficulty |
+  | --- | ---- | -------- | ----- | ---- | `;
   for (let item of Object.values(solutionList)) {
-    let ac = JSON.parse(item.stats).acRate;
-    let type = item.topicTags[0].name;
+    let { stat } = item;
+    let ac = (stat.total_acs / stat.total_submitted) * 100 + "%";
     let filePath = githubPath(item);
     let mdContent = fs.readFileSync(filePath, "utf-8");
     let solution = "";
@@ -82,23 +85,15 @@ function updateReadMe() {
         solution = "javaScript";
       }
     }
-    content += `\n|${item.questionFrontendId}|[${
-      item.title
+    content += `\n|${stat.frontend_question_id}|[${
+      stat.question__title
     }](https://leetcode.com/problems/${
-      item.titleSlug
-    }/)|[${solution}](${filePath})|${ac}|${
-      item.difficulty
-    }|${type}|${item.companyTags || "无"}|`;
+      stat.question__title_slug
+    }/)|[${solution}](${filePath})|${ac}|${getDifficulty(item.difficulty)}|`;
   }
   fs.writeFileSync("./README.md", content);
 }
 
-function readDirectory(dir) {
-  fs.readdir(dir, (error, files) => {
-    log(files);
-  });
-}
-
-generateFile(readJsonFile("./source/array.json"));
+generateFile(readJsonFile("questionList.json"));
 updateReadMe();
-fs.writeFileSync("./solution.json", JSON.stringify(solutionList));
+fs.writeFileSync("./solutionList.json", JSON.stringify(solutionList));
