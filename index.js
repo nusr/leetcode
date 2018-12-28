@@ -1,6 +1,7 @@
 const fs = require("fs");
 const log = info => console.log(info);
-let solutionList = readJsonFile("./solutionList.json");
+let solutionList = require("./solutionList.json");
+let questionList = require("./questionList.json");
 function generateDirectory(dirPath) {
   try {
     if (dirPath && !fs.existsSync(dirPath)) {
@@ -27,21 +28,22 @@ function githubPath(item) {
   }.md`;
 }
 function generateFile(list) {
+  generateDirectory("./solution");
   let { stat_status_pairs } = list;
   for (let item of stat_status_pairs) {
     if (item.status === "ac") {
       let filePath = githubPath(item);
-      let check = fs.existsSync(filePath);
       let {
         stat: { frontend_question_id, question__title_slug, question__title }
       } = item;
+      let check = fs.existsSync(filePath);
       if (check) {
-        // log(filePath);
+        log(filePath);
       } else {
         fs.writeFileSync(
           filePath,
           `# [${frontend_question_id}.${question__title}](https://leetcode.com/problems/${question__title_slug}/)
-          \n## 问题  
+          \n## 问题
           \n## 思路
           \n时间复杂度为 \`O(n)\`\n空间复杂度为 \`O(1)\`
           \n## 代码
@@ -94,6 +96,6 @@ function updateReadMe() {
   fs.writeFileSync("./README.md", content);
 }
 
-generateFile(readJsonFile("questionList.json"));
+generateFile(questionList);
 updateReadMe();
-fs.writeFileSync("./solutionList.json", JSON.stringify(solutionList));
+fs.writeFileSync("solutionList.json", JSON.stringify(solutionList));
