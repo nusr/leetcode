@@ -8,9 +8,13 @@ node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-source/
+docs/
 questionList.json
-solutionList.json
+test.html
+test.cpp
+spider/
+backup/
+./solution/result.json
 # Editor directories and files
 .idea
 .vscode

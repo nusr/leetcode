@@ -1,91 +1,121 @@
-# leetcode
+<p align="center"><img width="300" src="https://raw.githubusercontent.com/Ma63d/leetcode-spider/master/img/site-logo.png"></p>
+<p align="center">
+    <img src="https://img.shields.io/badge/Solved/Total(Locked)-97/915(139)-green.svg?style=flat-square" alt="">
+    <img src="https://img.shields.io/badge/Hard-1-blue.svg?style=flat-square" alt="">
+    <img src="https://img.shields.io/badge/Medium-9-blue.svg?style=flat-square" alt="">
+    <img src="https://img.shields.io/badge/Easy-87-blue.svg?style=flat-square" alt="">
+</p>
+<h1 align="center">leetcode 题解</h1>
+<p align="center">
+    <b>Language: c javascript</b>
+    <br>
+    <b>Last updated: 2019-01-02</b>
+    <br>
+    <span> 建议按 <b>Acceptance</b> 刷</span>
+    <br>
+    <br>
+</p>
 
-  记录 `javaScript`,`C` 刷 leetcode 
-  
-  | #   | title  | solution | Acceptance | Difficulty |
-  | --- | ---- | -------- | ----- | ---- | 
-|1|[Two Sum](https://leetcode.com/problems/two-sum/)|[javaScript](solution/1.two-sum.md)|39.60520575228925%|Easy|
-|2|[Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)|[javaScript](solution/2.add-two-numbers.md)|29.920785475460388%|Easy|
-|7|[Reverse Integer](https://leetcode.com/problems/reverse-integer/)|[javaScript](solution/7.reverse-integer.md)|24.800372417117924%|Easy|
-|8|[String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)|[javaScript](solution/8.string-to-integer-atoi.md)|14.317361335124065%|Easy|
-|9|[Palindrome Number](https://leetcode.com/problems/palindrome-number/)|[javaScript](solution/9.palindrome-number.md)|40.492440118905456%|Easy|
-|13|[Roman to Integer](https://leetcode.com/problems/roman-to-integer/)|[javaScript](solution/13.roman-to-integer.md)|50.720610602412606%|Easy|
-|20|[Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)|[javaScript](solution/20.valid-parentheses.md)|35.31099168540992%|Easy|
-|21|[Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)|[javaScript](solution/21.merge-two-sorted-lists.md)|44.606722343262945%|Easy|
-|27|[Remove Element](https://leetcode.com/problems/remove-element/)|[javaScript](solution/27.remove-element.md)|42.811909245231%|Easy|
-|28|[Implement strStr()](https://leetcode.com/problems/implement-strstr/)|[javaScript](solution/28.implement-strstr.md)|30.6543392278202%|Easy|
-|35|[Search Insert Position](https://leetcode.com/problems/search-insert-position/)|[javaScript](solution/35.search-insert-position.md)|40.16454928402996%|Easy|
-|50|[Pow(x, n)](https://leetcode.com/problems/powx-n/)|[javaScript](solution/50.powx-n.md)|27.112916984419318%|Easy|
-|53|[Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)|[javaScript](solution/53.maximum-subarray.md)|42.09244555071562%|Easy|
-|58|[Length of Last Word](https://leetcode.com/problems/length-of-last-word/)|[javaScript](solution/58.length-of-last-word.md)|32.072101264140045%|Easy|
-|65|[Valid Number](https://leetcode.com/problems/valid-number/)|[javaScript](solution/65.valid-number.md)|13.532003083543662%|Easy|
-|66|[Plus One](https://leetcode.com/problems/plus-one/)|[javaScript](solution/66.plus-one.md)|40.306974672424246%|Easy|
-|67|[Add Binary](https://leetcode.com/problems/add-binary/)|[javaScript](solution/67.add-binary.md)|36.9924300001293%|Easy|
-|69|[Sqrt(x)](https://leetcode.com/problems/sqrtx/)|[javaScript](solution/69.sqrtx.md)|30.054972276528645%|Easy|
-|70|[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)|[javaScript](solution/70.climbing-stairs.md)|42.64548130082792%|Easy|
-|83|[Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/)|[javaScript](solution/83.remove-duplicates-from-sorted-list.md)|41.45029056116032%|Easy|
-|100|[Same Tree](https://leetcode.com/problems/same-tree/)|[javaScript](solution/100.same-tree.md)|48.944593576794574%|Easy|
-|102|[Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)|[javaScript](solution/102.binary-tree-level-order-traversal.md)|45.96482921379902%|Easy|
-|104|[Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)|[javaScript](solution/104.maximum-depth-of-binary-tree.md)|58.13572537519407%|Easy|
-|107|[Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/)|[javaScript](solution/107.binary-tree-level-order-traversal-ii.md)|44.79515102170053%|Easy|
-|111|[Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/)|[javaScript](solution/111.minimum-depth-of-binary-tree.md)|34.49231092342028%|Easy|
-|118|[Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/)|[javaScript](solution/118.pascals-triangle.md)|43.386381851191544%|Easy|
-|119|[Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii/)|[javaScript](solution/119.pascals-triangle-ii.md)|40.984659411546644%|Easy|
-|121|[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)|[javaScript](solution/121.best-time-to-buy-and-sell-stock.md)|45.35279899492913%|Easy|
-|125|[Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)|[javaScript](solution/125.valid-palindrome.md)|29.451554853923255%|Easy|
-|136|[Single Number](https://leetcode.com/problems/single-number/)|[javaScript](solution/136.single-number.md)|57.98912496375238%|Easy|
-|160|[Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)|[javaScript](solution/160.intersection-of-two-linked-lists.md)|31.087374030042092%|Easy|
-|167|[Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)|[javaScript](solution/167.two-sum-ii-input-array-is-sorted.md)|48.310597265627955%|Easy|
-|169|[Majority Element](https://leetcode.com/problems/majority-element/)|[javaScript](solution/169.majority-element.md)|50.572623159425554%|Easy|
-|189|[Rotate Array](https://leetcode.com/problems/rotate-array/)|[javaScript](solution/189.rotate-array.md)|27.961764280416705%|Easy|
-|190|[Reverse Bits](https://leetcode.com/problems/reverse-bits/)|[javaScript](solution/190.reverse-bits.md)|29.345852099375275%|Easy|
-|191|[Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)|[javaScript](solution/191.number-of-1-bits.md)|41.10434260185299%|Easy|
-|202|[Happy Number](https://leetcode.com/problems/happy-number/)|[javaScript](solution/202.happy-number.md)|43.60403183116326%|Easy|
-|203|[Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/)|[javaScript](solution/203.remove-linked-list-elements.md)|34.802123855642506%|Easy|
-|204|[Count Primes](https://leetcode.com/problems/count-primes/)|[javaScript](solution/204.count-primes.md)|27.618766351182302%|Easy|
-|206|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)|[javaScript](solution/206.reverse-linked-list.md)|51.22468266912881%|Easy|
-|217|[Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)|[javaScript](solution/217.contains-duplicate.md)|49.85443609343868%|Easy|
-|231|[Power of Two](https://leetcode.com/problems/power-of-two/)|[javaScript](solution/231.power-of-two.md)|41.38542322527798%|Easy|
-|234|[Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)|[javaScript](solution/234.palindrome-linked-list.md)|34.7778571045232%|Easy|
-|242|[Valid Anagram](https://leetcode.com/problems/valid-anagram/)|[javaScript](solution/242.valid-anagram.md)|50.004954517529086%|Easy|
-|258|[Add Digits](https://leetcode.com/problems/add-digits/)|[javaScript](solution/258.add-digits.md)|53.09301204819277%|Easy|
-|263|[Ugly Number](https://leetcode.com/problems/ugly-number/)|[javaScript](solution/263.ugly-number.md)|40.18520299356824%|Easy|
-|268|[Missing Number](https://leetcode.com/problems/missing-number/)|[javaScript](solution/268.missing-number.md)|46.8487658188197%|Easy|
-|283|[Move Zeroes](https://leetcode.com/problems/move-zeroes/)|[javaScript](solution/283.move-zeroes.md)|53.03338495768257%|Easy|
-|326|[Power of Three](https://leetcode.com/problems/power-of-three/)|[javaScript](solution/326.power-of-three.md)|41.18575484909208%|Easy|
-|342|[Power of Four](https://leetcode.com/problems/power-of-four/)|[javaScript](solution/342.power-of-four.md)|39.79191714404708%|Easy|
-|344|[Reverse String](https://leetcode.com/problems/reverse-string/)|[javaScript](solution/344.reverse-string.md)|62.144255188962646%|Easy|
-|345|[Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/)|[javaScript](solution/345.reverse-vowels-of-a-string.md)|40.380968953640476%|Easy|
-|349|[Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/)|[javaScript](solution/349.intersection-of-two-arrays.md)|51.60098803833223%|Easy|
-|350|[Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/)|[javaScript](solution/350.intersection-of-two-arrays-ii.md)|45.96997076040123%|Easy|
-|367|[Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square/)|[javaScript](solution/367.valid-perfect-square.md)|39.06134128816286%|Easy|
-|371|[Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/)|[javaScript](solution/371.sum-of-two-integers.md)|51.23438998894447%|Easy|
-|387|[First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/)|[javaScript](solution/387.first-unique-character-in-a-string.md)|48.244922602176864%|Easy|
-|389|[Find the Difference](https://leetcode.com/problems/find-the-difference/)|[javaScript](solution/389.find-the-difference.md)|52.331299851566705%|Easy|
-|434|[Number of Segments in a String](https://leetcode.com/problems/number-of-segments-in-a-string/)|[javaScript](solution/434.number-of-segments-in-a-string.md)|36.44561097406895%|Easy|
-|441|[Arranging Coins](https://leetcode.com/problems/arranging-coins/)|[javaScript](solution/441.arranging-coins.md)|37.04196621806513%|Easy|
-|461|[Hamming Distance](https://leetcode.com/problems/hamming-distance/)|[javaScript](solution/461.hamming-distance.md)|69.67017248917917%|Easy|
-|476|[Number Complement](https://leetcode.com/problems/number-complement/)|[javaScript](solution/476.number-complement.md)|61.73866069878263%|Easy|
-|485|[Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/)|[javaScript](solution/485.max-consecutive-ones.md)|54.10942792623259%|Easy|
-|504|[Base 7](https://leetcode.com/problems/base-7/)|[javaScript](solution/504.base-7.md)|44.23754713725877%|Easy|
-|507|[Perfect Number](https://leetcode.com/problems/perfect-number/)|[javaScript](solution/507.perfect-number.md)|32.74698697233909%|Easy|
-|520|[Detect Capital](https://leetcode.com/problems/detect-capital/)|[javaScript](solution/520.detect-capital.md)|52.01709689645008%|Easy|
-|541|[Reverse String II](https://leetcode.com/problems/reverse-string-ii/)|[javaScript](solution/541.reverse-string-ii.md)|44.64643473110225%|Easy|
-|551|[Student Attendance Record I](https://leetcode.com/problems/student-attendance-record-i/)|[javaScript](solution/551.student-attendance-record-i.md)|44.99002812579903%|Easy|
-|557|[Reverse Words in a String III](https://leetcode.com/problems/reverse-words-in-a-string-iii/)|[javaScript](solution/557.reverse-words-in-a-string-iii.md)|62.31143640470065%|Easy|
-|561|[Array Partition I](https://leetcode.com/problems/array-partition-i/)|[javaScript](solution/561.array-partition-i.md)|67.68994411835878%|Easy|
-|595|[Big Countries](https://leetcode.com/problems/big-countries/)|[javaScript](solution/595.big-countries.md)|72.37135861150121%|Easy|
-|617|[Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/)|[javaScript](solution/617.merge-two-binary-trees.md)|68.3806034783128%|Easy|
-|620|[Not Boring Movies](https://leetcode.com/problems/not-boring-movies/)|[javaScript](solution/620.not-boring-movies.md)|60.35512553714765%|Easy|
-|627|[Swap Salary](https://leetcode.com/problems/swap-salary/)|[javaScript](solution/627.swap-salary.md)|67.99518261259243%|Easy|
-|637|[Average of Levels in Binary Tree](https://leetcode.com/problems/average-of-levels-in-binary-tree/)|[javaScript](solution/637.average-of-levels-in-binary-tree.md)|57.32440593409479%|Easy|
-|657|[Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)|[javaScript](solution/657.robot-return-to-origin.md)|70.0712285536492%|Easy|
-|709|[To Lower Case](https://leetcode.com/problems/to-lower-case/)|[javaScript](solution/709.to-lower-case.md)|75.12756664081316%|Easy|
-|728|[Self Dividing Numbers](https://leetcode.com/problems/self-dividing-numbers/)|[javaScript](solution/728.self-dividing-numbers.md)|68.02721848532927%|Easy|
-|771|[Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/)|[javaScript](solution/771.jewels-and-stones.md)|82.21270767389065%|Easy|
-|804|[Unique Morse Code Words](https://leetcode.com/problems/unique-morse-code-words/)|[javaScript](solution/804.unique-morse-code-words.md)|72.59296419389227%|Easy|
-|852|[Peak Index in a Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array/)|[javaScript](solution/852.peak-index-in-a-mountain-array.md)|68.06963841591735%|Easy|
-|867|[Transpose Matrix](https://leetcode.com/problems/transpose-matrix/)|[javaScript](solution/867.transpose-matrix.md)|63.2815360208274%|Easy|
-|868|[Binary Gap](https://leetcode.com/problems/binary-gap/)|[javaScript](solution/868.binary-gap.md)|59.05077673881459%|Easy|
-|876|[Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)|[javaScript](solution/876.middle-of-the-linked-list.md)|62.8636232718894%|Easy|
-|884|[Uncommon Words from Two Sentences](https://leetcode.com/problems/uncommon-words-from-two-sentences/)|[javaScript](solution/884.uncommon-words-from-two-sentences.md)|60.310976413229675%|Easy|
+<!--请保留下面这行信息，让更多用户了解到这个小爬虫，衷心感谢您的支持-->
+<p align="center">The source code is fetched using the tool <a href="https://github.com/Ma63d/leetcode-spider">leetcode-spider</a>.</p>
+
+| # | Problems | Solutions | Difficulty | Acceptance | Paid-Only
+|:--:|:-----:|:---------:|:----:|:----:|:----:|
+|001|[two-sum](https://leetcode.com/problems/two-sum/)| [**c**](.&#x2F;solution&#x2F;001.two-sum&#x2F;two-sum.c)   [**javascript**](.&#x2F;solution&#x2F;001.two-sum&#x2F;two-sum.js)|Easy|39.66%||
+|002|[add-two-numbers](https://leetcode.com/problems/add-two-numbers/)| [**javascript**](.&#x2F;solution&#x2F;002.add-two-numbers&#x2F;add-two-numbers.js)|Medium|29.98%||
+|007|[reverse-integer](https://leetcode.com/problems/reverse-integer/)| [**javascript**](.&#x2F;solution&#x2F;007.reverse-integer&#x2F;reverse-integer.js)|Easy|24.84%||
+|008|[string-to-integer-atoi](https://leetcode.com/problems/string-to-integer-atoi/)| [**javascript**](.&#x2F;solution&#x2F;008.string-to-integer-atoi&#x2F;string-to-integer-atoi.js)|Medium|14.33%||
+|009|[palindrome-number](https://leetcode.com/problems/palindrome-number/)| [**c**](.&#x2F;solution&#x2F;009.palindrome-number&#x2F;palindrome-number.c)   [**javascript**](.&#x2F;solution&#x2F;009.palindrome-number&#x2F;palindrome-number.js)|Easy|40.61%||
+|013|[roman-to-integer](https://leetcode.com/problems/roman-to-integer/)| [**javascript**](.&#x2F;solution&#x2F;013.roman-to-integer&#x2F;roman-to-integer.js)|Easy|50.80%||
+|020|[valid-parentheses](https://leetcode.com/problems/valid-parentheses/)| [**javascript**](.&#x2F;solution&#x2F;020.valid-parentheses&#x2F;valid-parentheses.js)|Easy|35.37%||
+|021|[merge-two-sorted-lists](https://leetcode.com/problems/merge-two-sorted-lists/)| [**javascript**](.&#x2F;solution&#x2F;021.merge-two-sorted-lists&#x2F;merge-two-sorted-lists.js)|Easy|44.71%||
+|027|[remove-element](https://leetcode.com/problems/remove-element/)| [**c**](.&#x2F;solution&#x2F;027.remove-element&#x2F;remove-element.c)   [**javascript**](.&#x2F;solution&#x2F;027.remove-element&#x2F;remove-element.js)|Easy|42.86%||
+|028|[implement-strstr](https://leetcode.com/problems/implement-strstr/)| [**javascript**](.&#x2F;solution&#x2F;028.implement-strstr&#x2F;implement-strstr.js)|Easy|30.70%||
+|035|[search-insert-position](https://leetcode.com/problems/search-insert-position/)| [**c**](.&#x2F;solution&#x2F;035.search-insert-position&#x2F;search-insert-position.c)   [**javascript**](.&#x2F;solution&#x2F;035.search-insert-position&#x2F;search-insert-position.js)|Easy|40.20%||
+|050|[powx-n](https://leetcode.com/problems/powx-n/)| [**javascript**](.&#x2F;solution&#x2F;050.powx-n&#x2F;powx-n.js)|Medium|27.15%||
+|053|[maximum-subarray](https://leetcode.com/problems/maximum-subarray/)| [**c**](.&#x2F;solution&#x2F;053.maximum-subarray&#x2F;maximum-subarray.c)   [**javascript**](.&#x2F;solution&#x2F;053.maximum-subarray&#x2F;maximum-subarray.js)|Easy|42.14%||
+|058|[length-of-last-word](https://leetcode.com/problems/length-of-last-word/)| [**c**](.&#x2F;solution&#x2F;058.length-of-last-word&#x2F;length-of-last-word.c)|Easy|32.09%||
+|065|[valid-number](https://leetcode.com/problems/valid-number/)| [**javascript**](.&#x2F;solution&#x2F;065.valid-number&#x2F;valid-number.js)|Hard|13.56%||
+|066|[plus-one](https://leetcode.com/problems/plus-one/)| [**javascript**](.&#x2F;solution&#x2F;066.plus-one&#x2F;plus-one.js)|Easy|40.34%||
+|067|[add-binary](https://leetcode.com/problems/add-binary/)| [**javascript**](.&#x2F;solution&#x2F;067.add-binary&#x2F;add-binary.js)|Easy|37.06%||
+|069|[sqrtx](https://leetcode.com/problems/sqrtx/)| [**c**](.&#x2F;solution&#x2F;069.sqrtx&#x2F;sqrtx.c)|Easy|30.10%||
+|070|[climbing-stairs](https://leetcode.com/problems/climbing-stairs/)| [**javascript**](.&#x2F;solution&#x2F;070.climbing-stairs&#x2F;climbing-stairs.js)|Easy|42.69%||
+|083|[remove-duplicates-from-sorted-list](https://leetcode.com/problems/remove-duplicates-from-sorted-list/)| [**c**](.&#x2F;solution&#x2F;083.remove-duplicates-from-sorted-list&#x2F;remove-duplicates-from-sorted-list.c)|Easy|41.50%||
+|100|[same-tree](https://leetcode.com/problems/same-tree/)| [**javascript**](.&#x2F;solution&#x2F;100.same-tree&#x2F;same-tree.js)|Easy|48.99%||
+|102|[binary-tree-level-order-traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)| [**javascript**](.&#x2F;solution&#x2F;102.binary-tree-level-order-traversal&#x2F;binary-tree-level-order-traversal.js)|Medium|46.04%||
+|104|[maximum-depth-of-binary-tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)| [**javascript**](.&#x2F;solution&#x2F;104.maximum-depth-of-binary-tree&#x2F;maximum-depth-of-binary-tree.js)|Easy|58.21%||
+|107|[binary-tree-level-order-traversal-ii](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/)| [**javascript**](.&#x2F;solution&#x2F;107.binary-tree-level-order-traversal-ii&#x2F;binary-tree-level-order-traversal-ii.js)|Easy|44.86%||
+|110|[balanced-binary-tree](https://leetcode.com/problems/balanced-binary-tree/)| [**c**](.&#x2F;solution&#x2F;110.balanced-binary-tree&#x2F;balanced-binary-tree.c)   [**javascript**](.&#x2F;solution&#x2F;110.balanced-binary-tree&#x2F;balanced-binary-tree.js)|Easy|39.91%||
+|111|[minimum-depth-of-binary-tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/)| [**javascript**](.&#x2F;solution&#x2F;111.minimum-depth-of-binary-tree&#x2F;minimum-depth-of-binary-tree.js)|Easy|34.53%||
+|118|[pascals-triangle](https://leetcode.com/problems/pascals-triangle/)| [**javascript**](.&#x2F;solution&#x2F;118.pascals-triangle&#x2F;pascals-triangle.js)|Easy|43.47%||
+|119|[pascals-triangle-ii](https://leetcode.com/problems/pascals-triangle-ii/)| [**javascript**](.&#x2F;solution&#x2F;119.pascals-triangle-ii&#x2F;pascals-triangle-ii.js)|Easy|41.05%||
+|121|[best-time-to-buy-and-sell-stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)| [**c**](.&#x2F;solution&#x2F;121.best-time-to-buy-and-sell-stock&#x2F;best-time-to-buy-and-sell-stock.c)   [**javascript**](.&#x2F;solution&#x2F;121.best-time-to-buy-and-sell-stock&#x2F;best-time-to-buy-and-sell-stock.js)|Easy|45.42%||
+|125|[valid-palindrome](https://leetcode.com/problems/valid-palindrome/)| [**c**](.&#x2F;solution&#x2F;125.valid-palindrome&#x2F;valid-palindrome.c)|Easy|29.50%||
+|136|[single-number](https://leetcode.com/problems/single-number/)| [**javascript**](.&#x2F;solution&#x2F;136.single-number&#x2F;single-number.js)|Easy|58.05%||
+|144|[binary-tree-preorder-traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/)| [**javascript**](.&#x2F;solution&#x2F;144.binary-tree-preorder-traversal&#x2F;binary-tree-preorder-traversal.js)|Medium|49.48%||
+|160|[intersection-of-two-linked-lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)| [**javascript**](.&#x2F;solution&#x2F;160.intersection-of-two-linked-lists&#x2F;intersection-of-two-linked-lists.js)|Easy|31.17%||
+|167|[two-sum-ii-input-array-is-sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)| [**javascript**](.&#x2F;solution&#x2F;167.two-sum-ii-input-array-is-sorted&#x2F;two-sum-ii-input-array-is-sorted.js)|Easy|48.36%||
+|169|[majority-element](https://leetcode.com/problems/majority-element/)| [**c**](.&#x2F;solution&#x2F;169.majority-element&#x2F;majority-element.c)   [**javascript**](.&#x2F;solution&#x2F;169.majority-element&#x2F;majority-element.js)|Easy|50.64%||
+|189|[rotate-array](https://leetcode.com/problems/rotate-array/)| [**c**](.&#x2F;solution&#x2F;189.rotate-array&#x2F;rotate-array.c)   [**javascript**](.&#x2F;solution&#x2F;189.rotate-array&#x2F;rotate-array.js)|Easy|28.02%||
+|190|[reverse-bits](https://leetcode.com/problems/reverse-bits/)| [**javascript**](.&#x2F;solution&#x2F;190.reverse-bits&#x2F;reverse-bits.js)|Easy|29.40%||
+|191|[number-of-1-bits](https://leetcode.com/problems/number-of-1-bits/)| [**c**](.&#x2F;solution&#x2F;191.number-of-1-bits&#x2F;number-of-1-bits.c)|Easy|41.15%||
+|202|[happy-number](https://leetcode.com/problems/happy-number/)| [**c**](.&#x2F;solution&#x2F;202.happy-number&#x2F;happy-number.c)|Easy|43.65%||
+|203|[remove-linked-list-elements](https://leetcode.com/problems/remove-linked-list-elements/)| [**c**](.&#x2F;solution&#x2F;203.remove-linked-list-elements&#x2F;remove-linked-list-elements.c)|Easy|34.84%||
+|204|[count-primes](https://leetcode.com/problems/count-primes/)| [**javascript**](.&#x2F;solution&#x2F;204.count-primes&#x2F;count-primes.js)|Easy|27.65%||
+|206|[reverse-linked-list](https://leetcode.com/problems/reverse-linked-list/)| [**c**](.&#x2F;solution&#x2F;206.reverse-linked-list&#x2F;reverse-linked-list.c)|Easy|51.31%||
+|217|[contains-duplicate](https://leetcode.com/problems/contains-duplicate/)| [**c**](.&#x2F;solution&#x2F;217.contains-duplicate&#x2F;contains-duplicate.c)   [**javascript**](.&#x2F;solution&#x2F;217.contains-duplicate&#x2F;contains-duplicate.js)|Easy|49.91%||
+|226|[invert-binary-tree](https://leetcode.com/problems/invert-binary-tree/)| [**c**](.&#x2F;solution&#x2F;226.invert-binary-tree&#x2F;invert-binary-tree.c)   [**javascript**](.&#x2F;solution&#x2F;226.invert-binary-tree&#x2F;invert-binary-tree.js)|Easy|56.20%||
+|231|[power-of-two](https://leetcode.com/problems/power-of-two/)| [**c**](.&#x2F;solution&#x2F;231.power-of-two&#x2F;power-of-two.c)|Easy|41.41%||
+|234|[palindrome-linked-list](https://leetcode.com/problems/palindrome-linked-list/)| [**c**](.&#x2F;solution&#x2F;234.palindrome-linked-list&#x2F;palindrome-linked-list.c)|Easy|34.82%||
+|242|[valid-anagram](https://leetcode.com/problems/valid-anagram/)| [**javascript**](.&#x2F;solution&#x2F;242.valid-anagram&#x2F;valid-anagram.js)|Easy|50.07%||
+|258|[add-digits](https://leetcode.com/problems/add-digits/)| [**c**](.&#x2F;solution&#x2F;258.add-digits&#x2F;add-digits.c)|Easy|53.13%||
+|263|[ugly-number](https://leetcode.com/problems/ugly-number/)| [**c**](.&#x2F;solution&#x2F;263.ugly-number&#x2F;ugly-number.c)|Easy|40.20%||
+|268|[missing-number](https://leetcode.com/problems/missing-number/)| [**c**](.&#x2F;solution&#x2F;268.missing-number&#x2F;missing-number.c)   [**javascript**](.&#x2F;solution&#x2F;268.missing-number&#x2F;missing-number.js)|Easy|46.89%||
+|283|[move-zeroes](https://leetcode.com/problems/move-zeroes/)| [**c**](.&#x2F;solution&#x2F;283.move-zeroes&#x2F;move-zeroes.c)   [**javascript**](.&#x2F;solution&#x2F;283.move-zeroes&#x2F;move-zeroes.js)|Easy|53.09%||
+|326|[power-of-three](https://leetcode.com/problems/power-of-three/)| [**c**](.&#x2F;solution&#x2F;326.power-of-three&#x2F;power-of-three.c)|Easy|41.20%||
+|342|[power-of-four](https://leetcode.com/problems/power-of-four/)| [**c**](.&#x2F;solution&#x2F;342.power-of-four&#x2F;power-of-four.c)   [**javascript**](.&#x2F;solution&#x2F;342.power-of-four&#x2F;power-of-four.js)|Easy|39.81%||
+|344|[reverse-string](https://leetcode.com/problems/reverse-string/)| [**c**](.&#x2F;solution&#x2F;344.reverse-string&#x2F;reverse-string.c)|Easy|62.20%||
+|345|[reverse-vowels-of-a-string](https://leetcode.com/problems/reverse-vowels-of-a-string/)| [**javascript**](.&#x2F;solution&#x2F;345.reverse-vowels-of-a-string&#x2F;reverse-vowels-of-a-string.js)|Easy|40.42%||
+|349|[intersection-of-two-arrays](https://leetcode.com/problems/intersection-of-two-arrays/)| [**javascript**](.&#x2F;solution&#x2F;349.intersection-of-two-arrays&#x2F;intersection-of-two-arrays.js)|Easy|51.70%||
+|350|[intersection-of-two-arrays-ii](https://leetcode.com/problems/intersection-of-two-arrays-ii/)| [**javascript**](.&#x2F;solution&#x2F;350.intersection-of-two-arrays-ii&#x2F;intersection-of-two-arrays-ii.js)|Easy|46.04%||
+|367|[valid-perfect-square](https://leetcode.com/problems/valid-perfect-square/)| [**c**](.&#x2F;solution&#x2F;367.valid-perfect-square&#x2F;valid-perfect-square.c)|Easy|39.08%||
+|371|[sum-of-two-integers](https://leetcode.com/problems/sum-of-two-integers/)| [**javascript**](.&#x2F;solution&#x2F;371.sum-of-two-integers&#x2F;sum-of-two-integers.js)|Easy|51.25%||
+|387|[first-unique-character-in-a-string](https://leetcode.com/problems/first-unique-character-in-a-string/)| [**javascript**](.&#x2F;solution&#x2F;387.first-unique-character-in-a-string&#x2F;first-unique-character-in-a-string.js)|Easy|48.32%||
+|389|[find-the-difference](https://leetcode.com/problems/find-the-difference/)| [**javascript**](.&#x2F;solution&#x2F;389.find-the-difference&#x2F;find-the-difference.js)|Easy|52.39%||
+|434|[number-of-segments-in-a-string](https://leetcode.com/problems/number-of-segments-in-a-string/)| [**c**](.&#x2F;solution&#x2F;434.number-of-segments-in-a-string&#x2F;number-of-segments-in-a-string.c)|Easy|36.48%||
+|441|[arranging-coins](https://leetcode.com/problems/arranging-coins/)| [**c**](.&#x2F;solution&#x2F;441.arranging-coins&#x2F;arranging-coins.c)|Easy|37.08%||
+|442|[find-all-duplicates-in-an-array](https://leetcode.com/problems/find-all-duplicates-in-an-array/)||Medium|59.10%||
+|461|[hamming-distance](https://leetcode.com/problems/hamming-distance/)| [**c**](.&#x2F;solution&#x2F;461.hamming-distance&#x2F;hamming-distance.c)|Easy|69.70%||
+|476|[number-complement](https://leetcode.com/problems/number-complement/)| [**javascript**](.&#x2F;solution&#x2F;476.number-complement&#x2F;number-complement.js)|Easy|61.76%||
+|485|[max-consecutive-ones](https://leetcode.com/problems/max-consecutive-ones/)| [**c**](.&#x2F;solution&#x2F;485.max-consecutive-ones&#x2F;max-consecutive-ones.c)   [**javascript**](.&#x2F;solution&#x2F;485.max-consecutive-ones&#x2F;max-consecutive-ones.js)|Easy|54.13%||
+|504|[base-7](https://leetcode.com/problems/base-7/)| [**javascript**](.&#x2F;solution&#x2F;504.base-7&#x2F;base-7.js)|Easy|44.27%||
+|507|[perfect-number](https://leetcode.com/problems/perfect-number/)| [**javascript**](.&#x2F;solution&#x2F;507.perfect-number&#x2F;perfect-number.js)|Easy|32.75%||
+|520|[detect-capital](https://leetcode.com/problems/detect-capital/)| [**c**](.&#x2F;solution&#x2F;520.detect-capital&#x2F;detect-capital.c)|Easy|52.03%||
+|541|[reverse-string-ii](https://leetcode.com/problems/reverse-string-ii/)| [**javascript**](.&#x2F;solution&#x2F;541.reverse-string-ii&#x2F;reverse-string-ii.js)|Easy|44.69%||
+|551|[student-attendance-record-i](https://leetcode.com/problems/student-attendance-record-i/)| [**javascript**](.&#x2F;solution&#x2F;551.student-attendance-record-i&#x2F;student-attendance-record-i.js)|Easy|45.04%||
+|557|[reverse-words-in-a-string-iii](https://leetcode.com/problems/reverse-words-in-a-string-iii/)| [**javascript**](.&#x2F;solution&#x2F;557.reverse-words-in-a-string-iii&#x2F;reverse-words-in-a-string-iii.js)|Easy|62.37%||
+|561|[array-partition-i](https://leetcode.com/problems/array-partition-i/)| [**c**](.&#x2F;solution&#x2F;561.array-partition-i&#x2F;array-partition-i.c)   [**javascript**](.&#x2F;solution&#x2F;561.array-partition-i&#x2F;array-partition-i.js)|Easy|67.74%||
+|617|[merge-two-binary-trees](https://leetcode.com/problems/merge-two-binary-trees/)| [**javascript**](.&#x2F;solution&#x2F;617.merge-two-binary-trees&#x2F;merge-two-binary-trees.js)|Easy|68.44%||
+|637|[average-of-levels-in-binary-tree](https://leetcode.com/problems/average-of-levels-in-binary-tree/)| [**javascript**](.&#x2F;solution&#x2F;637.average-of-levels-in-binary-tree&#x2F;average-of-levels-in-binary-tree.js)|Easy|57.38%||
+|654|[maximum-binary-tree](https://leetcode.com/problems/maximum-binary-tree/)||Medium|71.05%||
+|657|[robot-return-to-origin](https://leetcode.com/problems/robot-return-to-origin/)| [**javascript**](.&#x2F;solution&#x2F;657.robot-return-to-origin&#x2F;robot-return-to-origin.js)|Easy|70.13%||
+|728|[self-dividing-numbers](https://leetcode.com/problems/self-dividing-numbers/)| [**javascript**](.&#x2F;solution&#x2F;728.self-dividing-numbers&#x2F;self-dividing-numbers.js)|Easy|68.12%||
+|742|[to-lower-case](https://leetcode.com/problems/to-lower-case/)| [**javascript**](.&#x2F;solution&#x2F;742.to-lower-case&#x2F;to-lower-case.js)|Easy|75.16%||
+|782|[jewels-and-stones](https://leetcode.com/problems/jewels-and-stones/)| [**javascript**](.&#x2F;solution&#x2F;782.jewels-and-stones&#x2F;jewels-and-stones.js)|Easy|82.26%||
+|783|[search-in-a-binary-search-tree](https://leetcode.com/problems/search-in-a-binary-search-tree/)||Easy|64.71%||
+|784|[insert-into-a-binary-search-tree](https://leetcode.com/problems/insert-into-a-binary-search-tree/)||Medium|71.26%||
+|822|[unique-morse-code-words](https://leetcode.com/problems/unique-morse-code-words/)| [**javascript**](.&#x2F;solution&#x2F;822.unique-morse-code-words&#x2F;unique-morse-code-words.js)|Easy|72.72%||
+|861|[flipping-an-image](https://leetcode.com/problems/flipping-an-image/)||Easy|70.28%||
+|882|[peak-index-in-a-mountain-array](https://leetcode.com/problems/peak-index-in-a-mountain-array/)| [**javascript**](.&#x2F;solution&#x2F;882.peak-index-in-a-mountain-array&#x2F;peak-index-in-a-mountain-array.js)|Easy|68.14%||
+|898|[transpose-matrix](https://leetcode.com/problems/transpose-matrix/)| [**javascript**](.&#x2F;solution&#x2F;898.transpose-matrix&#x2F;transpose-matrix.js)|Easy|63.37%||
+|899|[binary-gap](https://leetcode.com/problems/binary-gap/)| [**javascript**](.&#x2F;solution&#x2F;899.binary-gap&#x2F;binary-gap.js)|Easy|59.14%||
+|904|[leaf-similar-trees](https://leetcode.com/problems/leaf-similar-trees/)||Easy|61.38%||
+|908|[middle-of-the-linked-list](https://leetcode.com/problems/middle-of-the-linked-list/)| [**javascript**](.&#x2F;solution&#x2F;908.middle-of-the-linked-list&#x2F;middle-of-the-linked-list.js)|Easy|62.97%||
+|920|[uncommon-words-from-two-sentences](https://leetcode.com/problems/uncommon-words-from-two-sentences/)| [**javascript**](.&#x2F;solution&#x2F;920.uncommon-words-from-two-sentences&#x2F;uncommon-words-from-two-sentences.js)|Easy|60.36%||
+|941|[sort-array-by-parity](https://leetcode.com/problems/sort-array-by-parity/)||Easy|71.45%||
+|958|[sort-array-by-parity-ii](https://leetcode.com/problems/sort-array-by-parity-ii/)||Easy|66.19%||
+|965|[unique-email-addresses](https://leetcode.com/problems/unique-email-addresses/)||Easy|79.74%||
+|975|[range-sum-of-bst](https://leetcode.com/problems/range-sum-of-bst/)||Medium|80.73%||
+|1001|[n-repeated-element-in-size-2n-array](https://leetcode.com/problems/n-repeated-element-in-size-2n-array/)||Easy|73.84%||
+|1005|[univalued-binary-tree](https://leetcode.com/problems/univalued-binary-tree/)| [**c**](.&#x2F;solution&#x2F;1005.univalued-binary-tree&#x2F;univalued-binary-tree.c)   [**javascript**](.&#x2F;solution&#x2F;1005.univalued-binary-tree&#x2F;univalued-binary-tree.js)|Easy|74.07%||
+
