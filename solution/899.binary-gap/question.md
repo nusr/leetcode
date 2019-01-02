@@ -1,7 +1,3 @@
-# [899.Binary Gap](https://leetcode.com/problems/binary-gap/)
-        
-## Description
-        
 Given a positive&nbsp;integer N, find and return the longest distance between two consecutive 1&#39;s in the binary representation of N.
 
 If there aren&#39;t two consecutive 1&#39;s, return 0.

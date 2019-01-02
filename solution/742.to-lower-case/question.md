@@ -1,7 +1,3 @@
-# [742.To Lower Case](https://leetcode.com/problems/to-lower-case/)
-        
-## Description
-        
 Implement function ToLowerCase() that has a string parameter str, and returns the same string in lowercase.
 
 &nbsp;

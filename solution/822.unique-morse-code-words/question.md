@@ -1,7 +1,3 @@
-# [822.Unique Morse Code Words](https://leetcode.com/problems/unique-morse-code-words/)
-        
-## Description
-        
 International Morse Code defines a standard encoding where each letter is mapped to a series of dots and dashes, as follows: &quot;a&quot; maps to &quot;.-&quot;, &quot;b&quot; maps to &quot;-...&quot;, &quot;c&quot; maps to &quot;-.-.&quot;, and so on.
 
 For convenience, the full table for the 26 letters of the English alphabet is given below:

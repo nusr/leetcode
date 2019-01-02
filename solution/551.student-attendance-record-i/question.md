@@ -1,7 +1,3 @@
-# [551.Student Attendance Record I](https://leetcode.com/problems/student-attendance-record-i/)
-        
-## Description
-        
 You are given a string representing an attendance record for a student. The record only contains the following three characters:
 
 

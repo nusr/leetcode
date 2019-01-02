@@ -1,7 +1,3 @@
-# [782.Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/)
-        
-## Description
-        
 You&#39;re given strings J representing the types of stones that are jewels, and S representing the stones you have.&nbsp; Each character in S is a type of stone you have.&nbsp; You want to know how many of the stones you have are also jewels.
 
 The letters in J are guaranteed distinct, and all characters in J and S are letters. Letters are case sensitive, so &quot;a&quot; is considered a different type of stone from &quot;A&quot;.

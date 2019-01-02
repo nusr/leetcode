@@ -1,7 +1,3 @@
-# [908.Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)
-        
-## Description
-        
 Given a non-empty, singly&nbsp;linked list with head node head, return&nbsp;a&nbsp;middle node of linked list.
 
 If there are two middle nodes, return the second middle node.

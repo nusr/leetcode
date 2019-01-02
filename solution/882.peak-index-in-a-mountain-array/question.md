@@ -1,7 +1,3 @@
-# [882.Peak Index in a Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array/)
-        
-## Description
-        
 Let&#39;s call an array A a mountain&nbsp;if the following properties hold:
 
 

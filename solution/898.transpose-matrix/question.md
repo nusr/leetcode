@@ -1,7 +1,3 @@
-# [898.Transpose Matrix](https://leetcode.com/problems/transpose-matrix/)
-        
-## Description
-        
 Given a&nbsp;matrix A, return the transpose of A.
 
 The transpose of a matrix is the matrix flipped over it&#39;s main diagonal, switching the row and column indices of the matrix.
