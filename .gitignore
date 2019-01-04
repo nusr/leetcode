@@ -8,14 +8,11 @@ node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-docs/
-questionList.json
 test.html
 test.cpp
-spider/
-backup/
-./solution/result.json
+_book/
 blog/
+./solution/result.json
 # Editor directories and files
 .idea
 .vscode

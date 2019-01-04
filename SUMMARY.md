@@ -1,7 +1,5 @@
 # Summary
 
-[github](https://github.com/nusr/leetcode)
-
 - [Introduction](README.md)
 - [001.Two Sum](./blog/001.two-sum.md)
 - [002.Add Two Numbers](./blog/002.add-two-numbers.md)

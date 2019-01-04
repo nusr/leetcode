@@ -70,9 +70,7 @@ class LeetCode {
     summaryList.unshift(configData.introduce);
     fs.writeFileSync(
       configData.summary,
-      `# Summary\n\n[github](https://github.com/nusr/leetcode)\n\n${summaryList.join(
-        "\n"
-      )}`
+      `# Summary\n\n${summaryList.join("\n")}`
     );
   }
   formatId(id) {
@@ -84,6 +82,24 @@ class LeetCode {
       return "" + id;
     }
   }
+  deleteMd(parentDir) {
+    let files = fs.readdirSync(parentDir);
+    for (let file of files) {
+      if (path.extname(file) === ".md") {
+        fs.unlinkSync(parentDir + file);
+      }
+    }
+    fs.rmdir(parentDir, err => {
+      if (err) {
+        log(err);
+      }
+    });
+  }
 }
 let leetCode = new LeetCode(SOLUTION_LIST);
-leetCode.generateBlog();
+if (process.argv[2] === "-d") {
+  leetCode.deleteMd("./_book/blog/");
+  leetCode.deleteMd("./blog/");
+} else {
+  leetCode.generateBlog();
+}

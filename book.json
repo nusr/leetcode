@@ -1,0 +1,22 @@
+{
+  "title": "Leetcode 题解",
+  "description": "Leetcode 题解",
+  "language": "zh",
+  "plugins": ["github", "highlight", "tbfed-pagefooter", "back-to-top-button"],
+  "pluginsConfig": {
+    "tbfed-pagefooter": {
+      "copyright": "Steve Xu",
+      "modify_label": "修订时间：",
+      "modify_format": "YYYY-MM-DD HH:mm:ss"
+    },
+    "sharing": {
+      "google": false,
+      "facebook": false,
+      "twitter": false,
+      "all": []
+    },
+    "github": {
+      "url": "https://github.com/nusr/leetcode"
+    }
+  }
+}
