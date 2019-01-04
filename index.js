@@ -1,57 +1,15 @@
-let tags = {
-  "/tag/array/": "数组",
-  "/tag/dynamic-programming/": "动态规划",
-  "/tag/string/": "字符串",
-  "/tag/math/": "数学",
-  "/tag/tree/": "树",
-  "/tag/hash-table/": "哈希表",
-  "/tag/depth-first-search/": "深度优先搜索",
-  "/tag/binary-search/": "二分查找",
-  "/tag/two-pointers/": "双指针",
-  "/tag/breadth-first-search/": "广度优先搜索",
-  "/tag/greedy/": "贪心算法",
-  "/tag/stack/": "栈",
-  "/tag/backtracking/": "回溯算法",
-  "/tag/design/": "设计",
-  "/tag/linked-list/": "链表",
-  "/tag/bit-manipulation/": "位运算",
-  "/tag/heap/": "堆",
-  "/tag/graph/": "图",
-  "/tag/sort/": "排序",
-  "/tag/union-find/": "并查集",
-  "/tag/divide-and-conquer/": "分治算法",
-  "/tag/binary-search-tree/": "二叉搜索树",
-  "/tag/trie/": "字典树",
-  "/tag/recursion/": "递归",
-  "/tag/queue/": "队列",
-  "/tag/segment-tree/": "线段树",
-  "/tag/random/": "Random",
-  "/tag/binary-indexed-tree/": "树状数组",
-  "/tag/minimax/": "极小化极大",
-  "/tag/topological-sort/": "拓扑排序",
-  "/tag/brainteaser/": "脑筋急转弯",
-  "/tag/geometry/": "几何",
-  "/tag/map/": "Map",
-  "/tag/rejection-sampling/": "Rejection Sampling",
-  "/tag/reservoir-sampling/": "蓄水池抽样",
-  "/tag/memoization/": "记忆化"
-};
 const fs = require("fs");
 const path = require("path");
 const log = info => console.log(info);
 const SOLUTION_LIST = require("./solution/result.json");
-const languageMap = {
-  "c++": "cpp",
-  java: "java",
-  c: "c",
-  "c#": "cs",
-  javascript: "js",
-  python: "py",
-  python3: "py",
-  ruby: "rb",
-  swift: "swift",
-  go: "go",
-  mysql: "sql"
+const configData = {
+  parentDir: "./solution",
+  outputDir: "./blog",
+  noteName: "note.md",
+  descName: "question.md",
+  link: "https://leetcode.com/problems/",
+  summary: "SUMMARY.md",
+  introduce: "- [Introduction](README.md)"
 };
 class LeetCode {
   constructor(SOLUTION_LIST) {
@@ -66,13 +24,56 @@ class LeetCode {
       log(err);
     }
   }
-  githubPath(item) {
-    return `/solution/${this.formatId(item.id)}.${item.title}/question.md`;
-  }
-  generateSummary() {
-    let parentDir = "./solution";
-    let directorys = fs.readdirSync(parentDir);
-    
+  generateBlog() {
+    this.generateDirectory(configData.outputDir);
+    let summaryList = [];
+    for (let item of Object.values(this.solutionList)) {
+      if (item && item.id) {
+        let filePath = `${configData.parentDir}/${this.formatId(item.id)}.${
+          item.title
+        }/`;
+        let files = fs.readdirSync(filePath);
+        let description = fs.readFileSync(
+          filePath + configData.descName,
+          "utf-8"
+        );
+        let analysis = "";
+        let analysisPath = filePath + configData.noteName;
+        if (fs.existsSync(analysisPath)) {
+          analysis = fs.readFileSync(analysisPath, "utf-8") || "";
+        }
+        let codeContent = [];
+        for (let file of files) {
+          let ext = path.extname(file);
+          if (ext !== ".md") {
+            ext = ext.slice(1, ext.length);
+            let code = fs.readFileSync(filePath + file, "utf-8");
+            codeContent.push(`\`\`\`${ext}\n${code}\n\`\`\``);
+          }
+        }
+        let upperTitle = `${this.formatId(item.id)}.${item.upperTitle}`;
+        let markdown = `# [${upperTitle}](${configData.link}${item.title}/)
+        \n## 问题
+        \n${description}
+        \n## 思路
+        \n${analysis}
+        \n## 代码
+        \n${codeContent.join("\n")}`;
+        let outputPath = `${configData.outputDir}/${this.formatId(item.id)}.${
+          item.title
+        }.md`;
+        log(`write to ${outputPath}`);
+        summaryList.push(`- [${upperTitle}](${outputPath})`);
+        fs.writeFileSync(outputPath, markdown);
+      }
+    }
+    summaryList.unshift(configData.introduce);
+    fs.writeFileSync(
+      configData.summary,
+      `# Summary\n\n[github](https://github.com/nusr/leetcode)\n\n${summaryList.join(
+        "\n"
+      )}`
+    );
   }
   formatId(id) {
     if (id < 10) {
@@ -85,4 +86,4 @@ class LeetCode {
   }
 }
 let leetCode = new LeetCode(SOLUTION_LIST);
-leetCode.generateSummary();
+leetCode.generateBlog();

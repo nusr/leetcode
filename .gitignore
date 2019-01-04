@@ -15,6 +15,7 @@ test.cpp
 spider/
 backup/
 ./solution/result.json
+blog/
 # Editor directories and files
 .idea
 .vscode
