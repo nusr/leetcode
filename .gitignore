@@ -1,7 +1,6 @@
 
 node_modules
 .idea
-
 .DS_Store
 node_modules/
 */node_modules
@@ -11,7 +10,7 @@ yarn-error.log*
 test.html
 test.cpp
 _book/
-blog/
+blog
 ./solution/result.json
 # Editor directories and files
 .idea

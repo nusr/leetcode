@@ -5,7 +5,7 @@
     <img src="https://img.shields.io/badge/Medium-11-blue.svg?style=flat-square" alt="">
     <img src="https://img.shields.io/badge/Easy-92-blue.svg?style=flat-square" alt="">
 </p>
-<h3 align="center">Leetcode 题解</h3>
+<h3 align="center">Leetcode Solutions</h3>
 
 <p align="center">
     <b>Language: javascript c mysql</b>

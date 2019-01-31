@@ -1,5 +1,6 @@
 {
   "title": "Leetcode 题解",
+  "structure": { "readme": "blog.md" },
   "description": "Leetcode 题解",
   "language": "zh",
   "plugins": ["github", "highlight", "tbfed-pagefooter", "back-to-top-button"],
